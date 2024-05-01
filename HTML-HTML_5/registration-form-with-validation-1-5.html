@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        width: 300px;
+        margin: 50px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Enter your name"
+          required
+          minlength="3"
+          maxlength="25"
+        />
+        <br /><input
+          type="email"
+          name=""
+          id=""
+          placeholder="Enter your email"
+          required
+        />
+        <br /><label for="dob">Date of Birth: </label>
+        <input type="date" name="" id="dob" required /> <br /><input
+          type="password"
+          name=""
+          id=""
+          placeholder="Enter your password"
+          required
+        />
+        <br /><input
+          type="password"
+          name=""
+          id=""
+          placeholder="Re-Enter your password"
+          required
+        />
+        <br />Gender: <label for="female">Female</label
+        ><input type="radio" name="gender" id="female" checked />
+        <label for="male">Male</label
+        ><input type="radio" name="gender" id="male" /> <br />Hobby:
+        <label for="dancing">Dancing</label>
+        <input type="checkbox" name="" id="dancing" />
+        <label for="coding">Coding</label>
+        <input type="checkbox" name="" id="coding" checked />
+
+        <label for="drawing">Drawing</label>
+        <input type="checkbox" name="" id="drawing" />
+        <label for="sports">Sports</label>
+        <input type="checkbox" name="" id="sports" />
+
+        <label for="gaming">Gaming</label>
+        <input type="checkbox" name="" id="gaming" />
+      </fieldset>
+      <fieldset>
+        <legend>Professional Information</legend>
+        <br />City:
+        <select name="" id="" required>
+          <option value="">Baroda</option>
+          <option value="" selected>Rajkot</option>
+          <option value="">Surat</option>
+          <option value="">Ahmedabad</option>
+          <option value="" disabled>Mumbai</option>
+        </select>
+
+        <br />
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Enter your college name"
+          list="college-list"
+          required
+        />
+
+        <datalist id="college-list">
+          <option value="H L Patel">H L Patel</option>
+          <option value="R R Mahila College">R R Mahila College</option>
+          <option value="Marwadi">Marwadi University</option>
+          <option value="HN Shukla">H N Shukla College</option>
+          <option value="Saurstra University">Saurstra University</option>
+          <option value="Atmiya University">Atmiya University</option>
+          <option value="MS University">MS University</option>
+          <option value="Parul University">Parul University</option>
+        </datalist>
+        <br /><input
+          type="text"
+          name=""
+          id=""
+          placeholder="Enter your course name"
+          required
+        />
+
+        <br /><input
+          type="number"
+          name=""
+          id=""
+          placeholder="Enter your CGPA"
+          required
+        />
+        <br /><label for="intro">Tell me about yourself</label>
+        <textarea name="" id="intro" cols="30" rows="3"></textarea>
+        <br /><label for="resume">Resume: </label>
+        <input type="file" name="" id="resume" required />
+      </fieldset>
+      <input type="submit" name="" id="" />
+      <input type="reset" name="" id="" />
+    </form>
+  </body>
+</html>
