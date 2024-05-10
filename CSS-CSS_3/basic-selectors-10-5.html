@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* universal selector */
+      * {
+        border: 1px solid blue;
+      }
+      /* tag selector */
+      p {
+        color: yellowgreen;
+      }
+
+      /* group selector */
+      div,
+      i,
+      u,
+      .small,
+      #big {
+        color: red;
+      }
+      /* class selector (.), can be used multiple times */
+      .italic {
+        color: violet;
+      }
+      /* id selector (#), unique can't use multiple times */
+      #italic-id {
+        color: turquoise;
+      }
+      .small {
+        font-size: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>This is div tag</div>
+    <p>This is p tag</p>
+    <i class="italic small">This is i tag</i>
+    <br /><u>This is u tag</u> <br /><strike>This is another i tag</strike>
+    <br /><span class="italic" id="italic-id">This is third i tag</span>
+    <h1 id="big">Big</h1>
+    <h2 class="small">Small</h2>
+  </body>
+</html>
