@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .sub-child {
+        color: yellowgreen;
+      }
+      .parent {
+        color: red;
+        border: 1px solid black;
+      }
+
+      .box {
+        color: violet;
+      }
+      .box {
+        color: turquoise;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">Child1</div>
+      <div class="child">
+        Child2
+        <div class="sub-child">sub-child1</div>
+        <div class="sub-child">sub-child2</div>
+      </div>
+      <div class="child">Child3</div>
+    </div>
+
+    <hr />
+    <div class="box">Box</div>
+  </body>
+</html>
