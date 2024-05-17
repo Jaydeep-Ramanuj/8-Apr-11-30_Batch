@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* Combinator selector, here you can combine multiple selector to make a more specified selector */
+      div.some.else {
+        color: red;
+      }
+
+      p.some {
+        color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div>This is div tag with no class</div>
+    <div class="some else">This is div tag with some class</div>
+    <p class="some">This is p tag with some class</p>
+    <p>This is p with no class</p>
+
+    <div class="some">This is div tag with some class</div>
+  </body>
+</html>

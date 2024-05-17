@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Adjacent sibling selector, it selects sibling element which is immediately after that element of specified type  */
+      #some + .child {
+        border: 1px solid black;
+      }
+
+      /* General sibling selector,  it selects all sibling elements which are after that element of specified type */
+      #some ~ .child {
+        border: 1px solid red;
+      }
+      /* it selects all sibling elements which are after that element of all type */
+      #some ~ * {
+        border: 2px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child" id="some">
+        child1
+        <div class="sub-child">sub-child1</div>
+        <div class="sub-child">sub-child2</div>
+        <div class="sub-child">sub-child3</div>
+      </div>
+      <div class="child">
+        child2
+        <div class="sub-child">sub-child1</div>
+        <div class="sub-child">sub-child2</div>
+        <div class="sub-child">sub-child3</div>
+      </div>
+      <div class="child">
+        child3
+        <div class="sub-child">sub-child1</div>
+        <div class="sub-child">sub-child2</div>
+        <div class="sub-child">sub-child3</div>
+      </div>
+      <p>This is p tag</p>
+      <b>This is b tag</b>
+    </div>
+  </body>
+</html>

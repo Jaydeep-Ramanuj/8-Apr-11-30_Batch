@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .parent {
+      }
+
+      .child {
+        padding: 5px;
+        margin: 5px;
+      }
+      /* descendant selector, it selects elements from all levels */
+      .parent .child {
+        border: 1px solid red;
+      }
+      /* descendant selector, it selects elements from its own children (first level) */
+      .parent > .child {
+        border: 3px solid blue;
+      }
+      /* .parent .sub-child {
+        color: blue;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">
+        child1
+        <div class="child sub-child">sub-child1</div>
+        <div class="child sub-child">sub-child2</div>
+        <div class="child sub-child">sub-child3</div>
+      </div>
+      <div class="child">
+        child2
+        <div class="sub-child">sub-child1</div>
+        <div class="sub-child">sub-child2</div>
+        <div class="sub-child">sub-child3</div>
+      </div>
+      <div class="child">
+        child3
+        <div class="sub-child">sub-child1</div>
+        <div class="sub-child">sub-child2</div>
+        <div class="sub-child">sub-child3</div>
+      </div>
+    </div>
+  </body>
+</html>
