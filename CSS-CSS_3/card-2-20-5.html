@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #ebf3f0;
+        font-family: 'Poppins', sans-serif;
+      }
+      .cards {
+        display: flex;
+      }
+      .card {
+        width: 350px;
+        margin: 50px auto;
+        border-radius: 12px;
+        background-color: #ffffff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: all 600ms;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+          rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+      img {
+        height: 200px;
+        width: 100%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+      }
+      .content {
+        padding: 15px;
+      }
+      .content span {
+        padding: 3px 8px;
+        border-radius: 24px;
+        background-color: #93d3df;
+        font-size: 12px;
+      }
+
+      h3,
+      p,
+      .profile {
+        margin-top: 5px;
+      }
+      .profile {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+      .profile img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      h6,
+      p {
+        color: #8b8b8b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cards">
+      <div class="card">
+        <img
+          src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Mahindra/Thar/10743/1690192572470/rear-left-view-121.jpg"
+          alt=""
+        />
+        <div class="content">
+          <span>Technology</span>
+          <h3>Why is the Tesla Cybertruck designed the way it is?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+            mollitia? Nam suscipit necessitatibus dolor deleniti corporis sed
+            reprehenderit consequuntur nemo.
+          </p>
+          <div class="profile">
+            <img
+              src="https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?q=80&w=1506&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <div class="info">
+              <h5>Jay Shah</h5>
+              <h6>2 hours ago</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.news18.com/ibnlive/uploads/2018/02/Mahindra-Thar-DC-Hammer-Feature.jpg?impolicy=website&width=640&height=480"
+          alt=""
+        />
+        <div class="content">
+          <span>Technology</span>
+          <h3>Why is the Tesla Cybertruck designed the way it is?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+            mollitia? Nam suscipit necessitatibus dolor deleniti corporis sed
+            reprehenderit consequuntur nemo.
+          </p>
+          <div class="profile">
+            <img
+              src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <div class="info">
+              <h5>Jay Shah</h5>
+              <h6>2 hours ago</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.rushlane.com/wp-content/uploads/2021/07/mahindra-thar-6x6-modified-cost-price-7.jpg"
+          alt=""
+        />
+        <div class="content">
+          <span>Technology</span>
+          <h3>Why is the Tesla Cybertruck designed the way it is?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+            mollitia? Nam suscipit necessitatibus dolor deleniti corporis sed
+            reprehenderit consequuntur nemo.
+          </p>
+          <div class="profile">
+            <img
+              src="https://images.unsplash.com/photo-1577860756464-3e84ec40c04c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <div class="info">
+              <h5>Jay Shah</h5>
+              <h6>2 hours ago</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
