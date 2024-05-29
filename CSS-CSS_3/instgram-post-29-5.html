@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .card {
+        /* height: 500px; */
+        width: fit-content;
+        max-width: 350px;
+        margin: 20px auto;
+        background-color: rgba(232, 230, 228, 0.671);
+        padding: 10px;
+        font-family: "Roboto", sans-serif;
+        border-radius: 12px;
+      }
+      .profile img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin: 8px;
+      }
+     .posts img{
+        height: 95px;
+        width: 95px;
+        object-fit: cover;
+      }
+      .fk {
+        margin-top: -70px;
+        margin-left: 140px;
+        display: flex;
+        gap: 22px;
+    
+      }
+      .bio {
+      }
+      .follow {
+        width: 150px;
+        display: flex;
+        gap: 6px;
+        margin: 3px;
+      }
+      .posts{
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        height: 200px;
+        overflow: auto;
+        scrollbar-width: none;
+      }
+      .btns{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 14px;
+      }
+      .btn{
+        padding: 3px 8px;
+        border: 1px solid ;
+        border-radius: 8px;
+      }
+      .btns .btn:nth-child(1){
+        background-color: black;
+        color: white;
+      }
+      .icons{
+        margin-top: 10px;
+        display: flex;
+        justify-content:space-around ;
+        color: grey;
+      }
+      .icons i:nth-child(1){
+        color: black;
+      }
+      .menus{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        color: grey;
+      }
+      .menus i:nth-child(2){
+        color: black;
+      }
+      .stats{
+        display: flex;
+        justify-content: space-around;
+        flex-grow: 1;
+      }
+      .stats> div{
+        font-weight: 600;
+        text-align: center;
+      }
+      .stats> div div{
+        font-weight: 400;
+      }
+      .profile{
+        display: flex;
+        align-items: center;
+      }
+      .name p{
+        width: fit-content;
+        border-radius: 8px;
+        padding: 2px 5px ;
+        background-color: lightgrey;
+      }
+      .bio > p:nth-child(2){
+color: #182849;
+font-weight: 500;
+margin: 5px 0px;
+      }
+      .highlights{
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+      }
+      .highlight{
+        margin: 5px 0;
+        margin-top: 10px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+      }
+
+      .highlight img{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        filter: grayscale(0.5);
+      }
+      .highlight p{
+        color: grey;
+      }
+      h4 span{
+        margin-left: 5px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h4>
+        <i class="fa-solid fa-arrow-left"></i> <span>myntra</span>
+      </h4>
+      <div class="profile">
+        <img
+          src="https://www.vhv.rs/dpng/d/413-4134507_myntra-logo-transparent-png-myntra-online-shopping-app.png"
+          alt=""
+        />
+        <div class="stats">
+          <div>14.3k <div>posts</div></div>
+          <div>3.8m <div>followres</div></div>
+          <div>303 <div>following</div></div>
+        </div>
+      </div>
+      <div class="bio">
+        <div class="name">
+            <b>MYNTRA</b>
+            <p>@myntra</p> 
+        </div>
+        <p>E-commerce website</p>
+        <p>
+          Myntra #EndOfReasonSale starts on May 31 start wishlisting on the
+          #Myntra app
+        </p>
+        <a
+          href="https://www.myntra.com/?utm_source=dms_google&utm_medium=searchbrand_cpc&utm_campaign=dms_google_searchbrand_cpc_Search_Brand_Myntra_Brand_India_BM_TROAS_SOK_New&gad_source=1&gclid=EAIaIQobChMIxvWPwvqxhgMV4tEWBR3cVww3EAAYASAAEgIDEPD_BwE"
+          >myntra.onelink.me/eWcy/gnozbijm9</a
+        >
+        </div>
+        <div class="btns">
+          <div class="btn">follow</div>
+          <div class="btn">message</div>
+          <div class="btn">shop</div>
+          <div class="btn"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="highlights">
+            <div class="highlight">
+                <img src="https://images.pexels.com/photos/985635/pexels-photo-985635.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <p>EORS 20</p>
+            </div>
+            <div class="highlight"><img src="https://images.pexels.com/photos/2703797/pexels-photo-2703797.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <p>EORS 20</p></div>
+            <div class="highlight"><img src="https://images.pexels.com/photos/2704265/pexels-photo-2704265.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <p>EORS 20</p></div>
+            <div class="highlight"><img src="https://images.pexels.com/photos/3754147/pexels-photo-3754147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <p>EORS 20</p></div>
+            <div class="highlight"><img src="https://images.pexels.com/photos/2078177/pexels-photo-2078177.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <p>EORS 20</p></div>
+            <div class="highlight"><img src="https://images.pexels.com/photos/730054/pexels-photo-730054.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <p>EORS 20</p></div>
+        </div>
+        <div class="icons">
+          <i class="fa-solid fa-table-cells"></i>
+          <i class="fa-solid fa-clapperboard"></i>
+          <i class="fa-solid fa-circle-nodes"></i>
+          <i class="fa-solid fa-id-card-clip"></i>
+        </div>
+        <div class="posts">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW3wI1koF_VW8enO9Za_h5jNOl5zknoPguuw&s"
+            alt=""
+          />
+          <img
+            src="https://digitalscholar.in/wp-content/uploads/2022/08/myntra-instagram-1024x623.webp"
+            alt=""
+          />
+          <img
+            src="https://pbs.twimg.com/media/FyG4x5jakAImbsV.png"
+            alt=""
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwWylKZxNQ2NOviqe4PzWn6uczQJPcDPLIeQ&s"
+            alt=""
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQorpXLddDsDF0ysevC2Kq16vogZvVtp2Dolg&s"
+            alt=""
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7aQwiFYvevv2tIm7y6lQoiEqvzhafL9UMug&s"
+            alt=""
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW3wI1koF_VW8enO9Za_h5jNOl5zknoPguuw&s"
+            alt=""
+          />
+          <img
+            src="https://digitalscholar.in/wp-content/uploads/2022/08/myntra-instagram-1024x623.webp"
+            alt=""
+          />
+          <img
+            src="https://images.pexels.com/photos/730055/pexels-photo-730055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <img
+            src="https://images.pexels.com/photos/1139450/pexels-photo-1139450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <img
+            src="https://images.pexels.com/photos/3689115/pexels-photo-3689115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <img
+            src="https://images.pexels.com/photos/4127913/pexels-photo-4127913.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </div>
+        <div class="menus">
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-regular fa-square-plus"></i>
+          <i class="fa-solid fa-clapperboard"></i>
+          <i class="fa-solid fa-circle-user"></i>
+        </div>
+    </div>
+</div>
+  </body>
+</html>
