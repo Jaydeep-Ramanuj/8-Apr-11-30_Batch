@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .wrapper {
+        width: 500px;
+        height: 500px;
+        /* background-color: bisque; */
+        background-image: url(https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?auto=compress&cs=tinysrgb&w=600);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+      }
+      .box {
+        height: 300px;
+        width: 300px;
+        background-color: rgba(255, 255, 255, 0.314);
+        /* filter: blur(5px); */
+        border-radius: 8px;
+        /* border: 1px solid black; */
+        /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+        /* clip-path: polygon(50% 0%, 0 46%, 100% 100%); */
+        /* clip-path: polygon(100% 0, 0 100%, 80% 100%); */
+        clip-path: polygon(
+          50% 0%,
+          80% 10%,
+          100% 35%,
+          100% 70%,
+          80% 90%,
+          50% 100%,
+          0 100%,
+          0% 70%,
+          0% 35%,
+          20% 10%
+        );
+      }
+
+      .outer-box {
+        height: 300px;
+        width: 300px;
+        border-radius: 12px;
+        margin: 50px auto;
+        /* border: 1px solid; */
+      }
+      .inner-box {
+        height: 300px;
+        width: 300px;
+        border-radius: 12px;
+        background-image: linear-gradient(#4158d0, #c850c0, #ffcc70);
+        clip-path: circle(12.7% at 0 0);
+        transition: all 600ms;
+        /* animation-name: animate;
+        animation-duration: 2000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; */
+      }
+      /* .outer-box:hover .inner-box {
+        clip-path: circle(150% at 0 0);
+      } */
+
+      @keyframes animate {
+        to {
+          transform: rotate(360deg);
+          clip-path: circle(150% at 0 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-box">
+      <div class="inner-box"></div>
+    </div>
+
+    <hr />
+    <div class="wrapper">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

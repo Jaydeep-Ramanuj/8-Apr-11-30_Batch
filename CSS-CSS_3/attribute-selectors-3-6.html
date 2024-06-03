@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .parent {
+        height: 500px;
+        width: 500px;
+        padding: 10px;
+        margin: 50px auto;
+        background-color: wheat;
+      }
+      .box {
+        margin: 5px;
+        width: 100%;
+        border-radius: 12px;
+        padding: 5px;
+        background-color: yellowgreen;
+      }
+
+      /* .box[custom-attribute] {
+        background-color: tomato;
+      } */
+      /* .box[custom-attribute='divyaraj'] {
+        background-color: tomato;
+      } */
+      /* .box[custom-attribute='divya'] {
+        background-color: tomato;
+      } */
+      /* .box[custom-attribute~='divy'] {
+        background-color: tomato;
+      } */
+      /* .box[custom-attribute|='divy'] {
+        background-color: tomato;
+      } */
+      /* .box[custom-attribute^='div'] {
+        background-color: tomato;
+      } */
+      /* .box[custom-attribute$='raj'] {
+        background-color: tomato;
+      } */
+      .box[custom-attribute*='vya'] {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box">no-attribute</div>
+      <div class="box" custom-attribute="">no-value</div>
+      <div class="box" custom-attribute="divyaraj">divyaraj</div>
+      <div class="box" custom-attribute="divy raj">divya raj</div>
+      <div class="box" custom-attribute="divya">divya</div>
+      <div class="box" custom-attribute="raj">raj</div>
+      <div class="box" custom-attribute="raj divya">raj divya</div>
+      <div class="box" custom-attribute="yara">yara</div>
+      <div class="box" custom-attribute="divyaj">divyaj</div>
+      <div class="box" custom-attribute="divy-raj">divy-raj</div>
+      <div class="box" custom-attribute="divy">divy</div>
+      <div class="box" custom-attribute="div">div</div>
+      <div class="box" custom-attribute="divyarajraj">divyarajraj</div>
+    </div>
+  </body>
+</html>
+
+<!-- universal (*) -->
+<!-- class (.) -->
+<!-- id (#) -->
+<!-- group (,) -->
+<!-- combinator (div.box) -->
+<!-- descendant (.parent .child) -->
+<!-- child (.parent > .child) -->
+<!-- adjacent sibling  (.parent + .child) -->
+<!-- general sibling  (.parent ~ .child) -->
+<!-- nth-child  (:nth-child()) -->
+<!-- attribute  ([attribute]) -->
