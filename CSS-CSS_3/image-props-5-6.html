@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        display: block;
+        margin: 50px auto;
+        border: 1px solid;
+        height: 300px;
+        width: 300px;
+        /* object-fit: fill; */
+        /* object-fit: contain; */
+        object-fit: cover;
+      }
+      img:hover {
+        /* filter: blur(10px); */
+        /* filter: grayscale(0.8); */
+        /* filter: sepia(); */
+        /* filter: opacity(0.3); */
+        /* filter: brightness(150%); */
+        /* filter: contrast(150%); */
+        filter: saturate(200%);
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt=""
+    />
+  </body>
+</html>

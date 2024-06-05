@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box,
+      .left-box,
+      .top-box,
+      .right-box,
+      .bottom-box {
+        height: 300px;
+        width: 300px;
+      }
+
+      .box {
+        margin: 100px auto;
+        position: relative;
+      }
+      .left-box,
+      .top-box,
+      .right-box,
+      .bottom-box {
+        margin: 10px;
+        background-color: yellowgreen;
+        position: absolute;
+      }
+      .left-box {
+        clip-path: polygon(0 0, 0 100%, 50% 50%);
+        background-color: yellowgreen;
+      }
+      .top-box {
+        clip-path: polygon(0 0, 50% 50%, 100% 0);
+        background-color: tomato;
+      }
+      .right-box {
+        clip-path: polygon(50% 50%, 100% 100%, 100% 0);
+        background-color: brown;
+      }
+      .bottom-box {
+        clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+        background-color: violet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="left-box"></div>
+      <div class="top-box"></div>
+      <div class="right-box"></div>
+      <div class="bottom-box"></div>
+    </div>
+  </body>
+</html>
