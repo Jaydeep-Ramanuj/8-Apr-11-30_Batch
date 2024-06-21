@@ -4,9 +4,47 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+:root {
+  --primary-text-color: #2d313a;
+  --secondary-text-color: #4a4e50;
+  --icon-color: #c7a272;
+  --primary-padding: 30px 150px;
+  --bg-primary-color: #fefefe;
+  --bg-secondary-color: #f2f0ea;
+}
+
+body {
+  background-color: var(--bg-primary-color);
+}
+
+/* common classes */
+
+.arrow-icon {
+  margin-left: 5px;
+  color: var(--icon-color);
+}
+
+.btn {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 16px;
+  background-color: var(--primary-text-color);
+}
+
+.heading {
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--primary-text-color);
+}
+
+.desc {
+  color: var(--secondary-text-color);
+}
 
 header {
-  padding: 30px 150px;
+  padding: var(--primary-padding);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,4 +68,205 @@ header nav a {
 
 img {
   width: 300px;
+}
+
+main {
+  padding: var(--primary-padding);
+}
+
+/* hero section */
+
+#hero-section {
+  height: 500px;
+  width: 100%;
+  background-image: url(images/Photo.png);
+  background-size: cover;
+  background-position: center right;
+  border-radius: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  gap: 30px;
+}
+
+#hero-section h1 {
+  width: 40%;
+  font-size: 56px;
+}
+
+#hero-section p {
+  width: 40%;
+}
+/* #hero-section a {
+  width: fit-content;
+  text-decoration: none;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 16px;
+  background-color: var(--primary-text-color);
+} */
+#hero-section a i {
+  margin-left: 5px;
+  color: var(--icon-color);
+}
+
+/* work section */
+
+#work-section {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#work-section .work-info {
+  max-width: 250px;
+  text-align: center;
+}
+
+#work-section .work-info p {
+  margin-top: 10px;
+  line-height: 25px;
+}
+#work-section .work-info a {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-weight: 600;
+}
+#work-section .work-info a i {
+  margin-left: 5px;
+  color: var(--icon-color);
+}
+
+/* about us section */
+#about-us-section {
+  display: flex;
+  margin-top: 100px;
+  gap: 30px;
+}
+#about-us-section .content {
+  flex-grow: 1;
+  padding: 20px;
+  padding-left: 50px;
+}
+#about-us-section .content h1 {
+  width: 80%;
+  font-size: 40px;
+}
+#about-us-section .content .desc {
+  font-size: 14px;
+  margin-top: 20px;
+  width: 80%;
+  text-align: justify;
+}
+
+#about-us-section .content .call {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#about-us-section .content .call span b {
+  color: var(--primary-text-color);
+}
+#about-us-section .content .call span h5 {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+}
+
+#about-us-section .content .call .icon {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--bg-secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-us-section .content .call .icon i {
+  color: var(--icon-color);
+}
+#about-us-section img {
+  min-width: 500px;
+  height: 450px;
+  object-fit: cover;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 20%;
+}
+
+#about-us-section .content .btn {
+  margin-top: 30px;
+}
+
+/* .testimonial section */
+
+#testimonials-section {
+  margin-top: 100px;
+  background-color: var(--bg-secondary-color);
+  padding: 50px 30px;
+  border-radius: 36px;
+}
+#testimonials-section .heading {
+  width: 60%;
+  text-align: center;
+  font-size: 48px;
+  margin: 0 auto;
+}
+
+#testimonials-section .testimonial-cards {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#testimonials-section .testimonial-cards .testimonial-card {
+  min-width: 250px;
+  background-color: var(--bg-primary-color);
+  padding: 25px;
+  border-radius: 20px;
+}
+
+#testimonials-section .testimonial-cards .testimonial-card .profile-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#testimonials-section .testimonial-cards .testimonial-card img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#testimonials-section .testimonial-cards .testimonial-card span {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+#testimonials-section .testimonial-cards .testimonial-card span h5 {
+  display: inline;
+  font-weight: 400;
+}
+
+#testimonials-section .testimonial-cards .testimonial-card .desc {
+  margin-top: 15px;
+}
+
+/* clients section */
+
+#clients-section {
+  padding: 20px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#clients-section img {
+  width: 150px;
+  height: 100px;
 }
