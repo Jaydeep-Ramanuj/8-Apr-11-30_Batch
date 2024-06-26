@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 100vh;
+        width: 100vw;
+        isolation: isolate;
+        overflow: hidden;
+      }
+
+      .bg {
+        height: 150%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: -50%;
+        background-size: cover;
+        background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2JrbWY3aXBwYWxvZ2UzeTZ4cHhjZHRqajdqeTJzM2dkNzNmOTR2MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Wmp1EOzVybWd13s5DB/giphy.webp);
+        transform: perspective(400px) rotateX(60deg);
+        z-index: -1;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="bg"></div>
+      <img src="https://i.gifer.com/XOsX.gif" alt="" />
+    </div>
+
+    <!-- <img
+      src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTc1ZDVyOWh2eTN3NGNxeHh1cWdiejk2cWUyMm40N2VybTdma3M5dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/SwOra6Eihl4nklbvMG/giphy.webp"
+      alt=""
+    /> -->
+
+    <!-- <img
+      src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2JrbWY3aXBwYWxvZ2UzeTZ4cHhjZHRqajdqeTJzM2dkNzNmOTR2MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Wmp1EOzVybWd13s5DB/giphy.webp"
+      alt=""
+    /> -->
+  </body>
+</html>
