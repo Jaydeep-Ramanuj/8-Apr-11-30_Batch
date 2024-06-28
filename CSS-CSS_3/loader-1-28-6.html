@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #220633;
+      }
+
+      .loader {
+        height: 400px;
+        width: 400px;
+        /* border: 3px solid white; */
+        position: relative;
+        margin: 150px auto;
+        animation-name: loader-animate;
+        animation-duration: 3000ms;
+        animation-delay: 300ms;
+        animation-iteration-count: infinite;
+        /* animation-timing-function: linear; */
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+
+      .circle {
+        border-radius: 50%;
+        background-color: #6dfe4d82;
+        position: absolute;
+        margin: 50px auto;
+      }
+      .circle::before {
+        content: '';
+        height: 110%;
+        width: 110%;
+        border-radius: 100%;
+        background-color: #e13c3982;
+        position: absolute;
+        left: -5%;
+        top: -5%;
+        transition: all 300ms;
+        animation-name: big;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 600ms;
+        animation-direction: alternate;
+      }
+      .circle::after {
+        content: '';
+        height: 90%;
+        width: 90%;
+        border-radius: 100%;
+        background-color: #5600f583;
+        /* background-color: rgba(255, 255, 255, 0.343); */
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        transition: all 300ms;
+        animation-name: small;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 600ms;
+        animation-direction: alternate;
+      }
+
+      .circle:hover::before {
+        top: -70%;
+      }
+      .circle:hover::after {
+        top: 70%;
+      }
+
+      .big {
+        height: 100px;
+        width: 100px;
+      }
+
+      .small {
+        height: 50px;
+        width: 50px;
+      }
+      .big:nth-child(1) {
+        top: -100px;
+        left: calc(50% - 50px);
+      }
+      .big:nth-child(2) {
+        top: calc(100% - 100px);
+        left: -50px;
+      }
+      .big:nth-child(3) {
+        top: calc(100% - 100px);
+        left: calc(100% - 50px);
+      }
+
+      .small:nth-child(4) {
+        top: calc(50% - 75px);
+        left: -25px;
+      }
+      .small:nth-child(5) {
+        top: calc(50% - 75px);
+        left: calc(100% - 25px);
+      }
+      .small:nth-child(6) {
+        top: calc(100% - 75px);
+        left: calc(50% - 25px);
+      }
+
+      @keyframes loader-animate {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes circle-animate {
+      }
+
+      @keyframes big {
+        to {
+          top: -70%;
+        }
+      }
+      @keyframes small {
+        to {
+          top: 70%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="circle big"></div>
+      <div class="circle big"></div>
+      <div class="circle big"></div>
+      <div class="circle small"></div>
+      <div class="circle small"></div>
+      <div class="circle small"></div>
+    </div>
+  </body>
+</html>

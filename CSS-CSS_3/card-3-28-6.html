@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+      body {
+        background-color: #0b0f12;
+      }
+      .card {
+        height: 500px;
+        width: 500px;
+        border-radius: 12px;
+        margin: 100px auto;
+        background-image: linear-gradient(transparent, transparent),
+          url(https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        position: relative;
+        background-position: center;
+        transition: all 300ms;
+      }
+      .card:hover {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.244),
+            rgba(0, 0, 0, 0.665)
+          ),
+          url(https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+      }
+      .user-info,
+      .user-skills {
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        backdrop-filter: blur(8px);
+        border-radius: 8px;
+        padding: 20px;
+        background-color: rgba(128, 128, 128, 0.23);
+        color: white;
+      }
+      .user-info {
+        top: -100px;
+        left: -100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        opacity: 0;
+        transition: all 300ms;
+      }
+      .card:hover .user-info {
+        left: -15px;
+        top: -15px;
+        opacity: 1;
+      }
+      .user-info h2 {
+        font-size: 32px;
+      }
+      .user-skills {
+        bottom: -100px;
+        right: -100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        opacity: 0;
+        transition: all 300ms;
+      }
+      .card:hover .user-skills {
+        bottom: -15px;
+        right: -15px;
+        opacity: 1;
+      }
+      .user-skills ul {
+        text-align: end;
+        list-style: none;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="user-info">
+        <h2>Ayushi</h2>
+        <h4>FrontEnd Developer</h4>
+      </div>
+      <div class="user-skills">
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaSctipt</li>
+          <li>REact</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

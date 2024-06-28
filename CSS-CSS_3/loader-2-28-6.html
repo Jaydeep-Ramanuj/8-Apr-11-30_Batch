@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #24252e;
+      }
+      .loader {
+        height: 100px;
+        width: 100px;
+        margin: 300px auto;
+        position: relative;
+      }
+      .box {
+        height: 50px;
+        width: 50px;
+        border-radius: 5px;
+        background-color: #1db49f;
+        position: absolute;
+        animation-duration: 900ms;
+        animation-direction: alternate;
+        animation-delay: 300ms;
+        animation-iteration-count: infinite;
+        transform: rotate(45deg);
+      }
+      .box:nth-child(1) {
+        top: calc(50% - 25px);
+        /* left: -25px; */
+        left: 0;
+
+        animation-name: box1;
+      }
+      .box:nth-child(2) {
+        /* top: -25px; */
+        top: 0px;
+        left: calc(50% - 25px);
+
+        animation-name: box2;
+      }
+      .box:nth-child(3) {
+        /* left: calc(100% - 25px); */
+        left: calc(100% - 50px);
+        top: calc(50% - 25px);
+
+        animation-name: box3;
+      }
+      .box:nth-child(4) {
+        /* top: calc(100% - 25px); */
+        top: calc(100% - 50px);
+        left: calc(50% - 25px);
+
+        animation-name: box4;
+      }
+
+      @keyframes box1 {
+        from {
+          transform: translateX(0px) rotate(45deg);
+        }
+        to {
+          transform: translateX(-200px) rotate(360deg) scale(1.5);
+          box-shadow: 0px 0px 30px 5px rgba(211, 211, 211, 0.544);
+        }
+      }
+      @keyframes box2 {
+        from {
+          transform: translateY(0px) rotate(45deg);
+        }
+        to {
+          transform: translateY(-200px) rotate(360deg) scale(1.5);
+          box-shadow: 0px 0px 30px 5px rgba(211, 211, 211, 0.544);
+        }
+      }
+      @keyframes box3 {
+        from {
+          transform: translateX(0px) rotate(45deg);
+        }
+        to {
+          transform: translateX(200px) rotate(360deg) scale(1.5);
+          box-shadow: 0px 0px 30px 5px rgba(211, 211, 211, 0.544);
+        }
+      }
+      @keyframes box4 {
+        from {
+          transform: translateY(0px) rotate(45deg);
+        }
+        to {
+          transform: translateY(200px) rotate(360deg) scale(1.5);
+          box-shadow: 0px 0px 30px 5px rgba(211, 211, 211, 0.544);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
