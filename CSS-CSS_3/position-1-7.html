@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 500px;
+        height: 500px;
+        background-color: bisque;
+        display: flex;
+        margin: 50px auto;
+        position: relative;
+      }
+
+      .child {
+        height: 50px;
+        width: 50px;
+        background-color: yellowgreen;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .spacer {
+        height: 1500px;
+        background-color: burlywood;
+      }
+      .child5 {
+        background-color: violet;
+        position: fixed;
+        top: 100px;
+        left: 100px;
+      }
+
+      .child4 {
+        background-color: turquoise;
+        position: sticky;
+        top: 100px;
+      }
+
+      .child2 {
+        background-color: tomato;
+        position: relative;
+        top: 100px;
+        /* left: 50px; */
+      }
+
+      .child1 {
+        background-color: blue;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        z-index: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child child1">1</div>
+      <div class="child child2">2</div>
+      <div class="child child3">3</div>
+      <div class="child child4">4</div>
+      <div class="child child5">5</div>
+    </div>
+
+    <div class="spacer"></div>
+  </body>
+</html>
+
+<!-- Types of positions
+
+1. Static
+2. Fixed
+3. Sticky
+4. Relative
+5. Absolute 
+
+Offsets:
+top
+left
+
+bottom
+right
+
+top > bottom
+left > right
+
+-->

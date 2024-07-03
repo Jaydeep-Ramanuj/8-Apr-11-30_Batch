@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 500px;
+        height: 500px;
+        background-color: bisque;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+        transition: all 300ms;
+        border-radius: 12px;
+        position: relative;
+      }
+
+      .inner-box {
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        background-color: tomato;
+        transition: all 300ms;
+        border-radius: 8px;
+      }
+      .inner-box:nth-child(1) {
+        position: absolute;
+        background-color: aqua;
+        top: 100px;
+      }
+      .inner-box:nth-child(2) {
+        z-index: 2;
+      }
+
+      .box:hover {
+        background-color: violet;
+      }
+      .box:hover .inner-box {
+        background-color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="inner-box"></div>
+      <div class="inner-box"></div>
+    </div>
+  </body>
+</html>
