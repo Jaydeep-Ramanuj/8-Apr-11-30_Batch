@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        margin-top: 20px;
+        height: 300px;
+        /* width: 500px; */
+        width: 50%;
+        border-radius: 12px;
+      }
+      .box1 {
+        background-color: yellowgreen;
+      }
+      /* .box2 {
+        background-color: yellow;
+      } */
+
+      @media screen and (max-width: 499px) and (orientation: landscape) {
+        .box1 {
+          background-color: black;
+        }
+        /* .box2 {
+          width: 30%;
+        } */
+      }
+      @media screen and (max-width: 499px) and (orientation: portrait) {
+        .box1 {
+          background-color: red;
+        }
+        /* .box2 {
+          width: 30%;
+        } */
+      }
+      @media screen and (min-width: 500px) {
+        .box1 {
+          background-color: tomato;
+        }
+        /* .box2 {
+          width: 30%;
+        } */
+      }
+      @media screen and (min-width: 700px) {
+        .box1 {
+          background-color: aqua;
+        }
+      }
+      @media screen and (min-width: 900px) and (max-width: 1000px) {
+        .box1 {
+          background-color: blue;
+          height: 500px;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        .box1 {
+          background-color: violet;
+          height: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1"></div>
+    <!-- <div class="box box2"></div> -->
+  </body>
+</html>
+
+<!--  Extra small devices (phones, 600px and down) -->
+<!-- @media only screen and (max-width: 600px) {...} -->
+
+<!--  Small devices (portrait tablets and large phones, 600px and up) -->
+<!-- @media only screen and (min-width: 600px) {...} -->
+
+<!--  Medium devices (landscape tablets, 768px and up) -->
+<!-- @media only screen and (min-width: 768px) {...} -->
+
+<!--  Large devices (laptops/desktops, 992px and up) -->
+<!-- @media only screen and (min-width: 992px) {...} -->
+
+<!--  Extra large devices (large laptops and desktops, 1200px and up) -->
+<!-- @media only screen and (min-width: 1200px) {...}  -->
+
+<!-- BREAKPOINT	KEYWORD	DIMENSION
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px -->
