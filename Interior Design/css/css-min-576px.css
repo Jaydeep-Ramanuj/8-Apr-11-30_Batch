@@ -1,0 +1,31 @@
+@media (min-width: 576px) {
+  :root {
+    --primary-padding: 20px;
+    --margin-top: 50px;
+  }
+
+  #about-us-section img {
+    max-width: 300px;
+    min-width: auto;
+    height: auto;
+    max-height: 400px;
+  }
+  #about-us-section {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+  #about-us-section .content {
+    max-width: 500px;
+  }
+  #projects-section .projects .project {
+    margin: 0 auto;
+  }
+  #projects-section .projects .project img {
+    max-width: 300px;
+  }
+
+  #about-us-section .content .desc,
+  #about-us-section .content .heading {
+    width: auto;
+  }
+}

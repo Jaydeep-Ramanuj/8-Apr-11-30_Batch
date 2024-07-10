@@ -18,20 +18,29 @@
     />
     <title>Interior Design</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/css-max-400px.css" />
+    <link rel="stylesheet" href="css/css-min-400px.css" />
+    <link rel="stylesheet" href="css/css-min-576px.css" />
+    <link rel="stylesheet" href="css/css-min-768px.css" />
+    <link rel="stylesheet" href="css/css-min-992px.css" />
   </head>
   <body>
     <!-- Header -->
     <header>
       <img src="images/Logo.png" alt="" />
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Pages</a>
-        <a href="#">Services</a>
-        <a href="#">Project</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact</a>
-      </nav>
-      <i class="fa-solid fa-magnifying-glass"></i>
+      <label for="toggle"><i class="fa-solid fa-bars"></i></label>
+      <input type="checkbox" name="" id="toggle" />
+      <div class="wrapper">
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Pages</a>
+          <a href="#">Services</a>
+          <a href="#">Project</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </nav>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
     </header>
     <!-- main -->
     <main>

@@ -11,6 +11,7 @@
   --primary-padding: 30px 150px;
   --bg-primary-color: #fefefe;
   --bg-secondary-color: #f2f0ea;
+  --margin-top: 100px;
 }
 
 body {
@@ -54,6 +55,19 @@ header img {
   width: 100px;
 }
 
+#toggle {
+  display: none;
+}
+#toggle:checked + .wrapper {
+  visibility: visible;
+  top: 50px;
+  opacity: 1;
+}
+header .wrapper {
+  display: flex;
+  transition: all 300ms;
+  gap: 30px;
+}
 header nav {
   margin-left: auto;
   margin-right: 10px;
@@ -120,14 +134,16 @@ main {
 /* work section */
 
 #work-section {
-  margin-top: 100px;
+  margin-top: var(--margin-top);
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #work-section .work-info {
   max-width: 250px;
   text-align: center;
+  margin: 0 auto;
 }
 
 #work-section .work-info p {
@@ -149,8 +165,9 @@ main {
 /* about us section */
 #about-us-section {
   display: flex;
-  margin-top: 100px;
+  margin-top: var(--margin-top);
   gap: 30px;
+  flex-wrap: wrap-reverse;
 }
 #about-us-section .content {
   flex-grow: 1;
@@ -211,7 +228,7 @@ main {
 /* .testimonial section */
 
 #testimonials-section {
-  margin-top: 100px;
+  margin-top: var(--margin-top);
   background-color: var(--bg-secondary-color);
   padding: 50px 30px;
   border-radius: 36px;
@@ -228,13 +245,17 @@ main {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 #testimonials-section .testimonial-cards .testimonial-card {
-  min-width: 250px;
+  /* min-width: 250px;
+  max-width: 300px; */
   background-color: var(--bg-primary-color);
   padding: 25px;
   border-radius: 20px;
+  margin: 0 auto;
+  width: clamp(250px, 20vw, 300px);
 }
 
 #testimonials-section .testimonial-cards .testimonial-card .profile-bar {
@@ -267,10 +288,11 @@ main {
 
 #clients-section {
   padding: 20px;
-  margin-top: 100px;
+  margin-top: var(--margin-top);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 #clients-section img {
   width: 150px;
@@ -280,7 +302,7 @@ main {
 /* .project section */
 
 #projects-section {
-  margin-top: 100px;
+  margin-top: var(--margin-top);
 }
 #projects-section h1,
 #projects-section p {
@@ -336,14 +358,18 @@ main {
 /* counter section */
 #counter-section {
   width: 98.7vw;
-  margin-top: 100px;
+  margin-top: var(--margin-top);
   margin-left: -150px;
   display: flex;
   background-color: var(--bg-secondary-color);
-  padding: 50px 150px;
+  padding: var(--primary-padding);
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+#contact-section .number {
+  margin: 0 auto;
+}
 #counter-section .v-divider {
   height: 100px;
   width: 1px;
@@ -366,7 +392,7 @@ main {
 /* blog section */
 
 #blog-section {
-  margin-top: 100px;
+  margin-top: var(--margin-top);
 }
 
 #blog-section h1 {
@@ -378,6 +404,7 @@ main {
   font-size: 18px;
   text-align: center;
   width: 60%;
+  max-width: 500px;
   margin: 0 auto;
   margin-top: 10px;
 }
@@ -386,6 +413,7 @@ main {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #blog-section .articles .article {
@@ -453,7 +481,7 @@ main {
 /* contact section */
 
 #contact-section {
-  margin-top: 100px;
+  margin-top: var(--margin-top);
   background-color: var(--primary-text-color);
   border-radius: 36px;
   padding: 70px 30px;
@@ -483,12 +511,13 @@ main {
 /* footer */
 
 footer {
-  margin-top: 100px;
+  margin-top: var(--margin-top);
   margin-bottom: 50px;
 }
 footer .footer-top {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: var(--primary-padding);
 }
 

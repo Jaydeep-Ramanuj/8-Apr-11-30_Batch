@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+  :root {
+    --primary-padding: 20px 100px;
+    --margin-top: 50px;
+  }
+  header label {
+    display: none;
+  }
+  header .wrapper {
+    visibility: visible;
+    opacity: 1;
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+  }
+  header .wrapper nav {
+    flex-direction: row;
+  }
+}
