@@ -100,4 +100,7 @@
   footer .footer-top {
     row-gap: 30px;
   }
+  #counter-section {
+    margin-left: -20px;
+  }
 }

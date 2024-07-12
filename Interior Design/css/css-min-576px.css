@@ -28,4 +28,8 @@
   #about-us-section .content .heading {
     width: auto;
   }
+
+  #counter-section {
+    margin-left: -50px;
+  }
 }

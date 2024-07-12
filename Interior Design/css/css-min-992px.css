@@ -3,4 +3,31 @@
     --primary-padding: 20px 150px;
     --margin-top: 100px;
   }
+  #hero-section {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+  }
+
+  #hero-section h1 {
+    width: 40%;
+    font-size: 56px;
+    text-align: start;
+  }
+
+  #hero-section p {
+    width: 40%;
+    text-align: start;
+  }
+
+  #hero-section .btn {
+    margin: 0 0;
+  }
+
+  #counter-section {
+    margin-left: -150px;
+  }
 }

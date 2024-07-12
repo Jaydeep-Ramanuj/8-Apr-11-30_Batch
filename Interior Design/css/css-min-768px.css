@@ -3,6 +3,9 @@
     --primary-padding: 20px 100px;
     --margin-top: 50px;
   }
+  #counter-section {
+    margin-left: -100px;
+  }
   header label {
     display: none;
   }
