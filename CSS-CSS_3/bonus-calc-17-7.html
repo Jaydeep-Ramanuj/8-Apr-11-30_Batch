@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 500px;
+        /* width: 500px; */
+        width: 70%;
+        background-color: wheat;
+        margin: 50px auto;
+        position: relative;
+      }
+
+      .inner-box {
+        height: 50px;
+        /* width: 200px; */
+        width: 40%;
+        background-color: tomato;
+        position: absolute;
+        /* left: calc(50% - 20%); */
+        left: calc(100% + 10px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="inner-box"></div>
+    </div>
+  </body>
+</html>

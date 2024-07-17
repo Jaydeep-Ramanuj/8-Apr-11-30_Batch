@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li {
+        list-style-type: none;
+      }
+
+      /* counter-reset() */
+      /* counter() / counters() */
+      /* counter-increment */
+
+      ul {
+        counter-reset: darshna 0;
+      }
+
+      li::before {
+        counter-increment: darshna;
+        /* content: counter(darshna); */
+        content: counters(darshna, '.', darshna) ' ';
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        Web Development
+        <ul>
+          <li>
+            HTML
+            <ul>
+              <li>HTML Tags</li>
+              <li>Table Tags</li>
+              <li>
+                Input Tags
+                <ul>
+                  <li>Text</li>
+                  <li>Email</li>
+                  <li>Password</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            CSS
+            <ul>
+              <li>CSS Introduction</li>
+              <li>CSS Selectors</li>
+              <li>CSS Animation</li>
+            </ul>
+          </li>
+          <li>
+            JavaScript
+            <ul>
+              <li>Variables, operators, Data types</li>
+              <li>Functions, Objects, Arrays</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Graphics Design
+        <ul>
+          <li>UI (User Interface)</li>
+          <li>UX (User Experience)</li>
+        </ul>
+      </li>
+      <li>
+        Computer Education
+        <ul>
+          <li>C/C++</li>
+          <li>OS</li>
+          <li>Database</li>
+          <li>
+            DA
+            <ul>
+              <li>Basics of DS</li>
+              <li>Advance DS</li>
+            </ul>
+          </li>
+          <li>Computer architecture</li>
+          <li>
+            Compiler
+            <ul>
+              <li>Theory of Computation (TOC)</li>
+              <li>Compiler Design (CD)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

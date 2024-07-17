@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        /* font-size: 100px; */
+        font-size: clamp(32px, 10vw, 100px);
+        font-weight: 600;
+        background-color: tomato;
+        /* min-width: 300px;
+        max-width: 600px;
+        width: 50%; */
+        width: clamp(300px, 50%, 600px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Jay</div>
+  </body>
+</html>

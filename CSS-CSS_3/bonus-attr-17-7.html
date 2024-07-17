@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .fancy {
+        height: 300px;
+        width: 300px;
+        background-color: tomato;
+        margin: 50px auto;
+        position: relative;
+      }
+
+      .fancy::before {
+        /* content: 'some'; */
+        /* content: attr(class); */
+        content: attr(data-name);
+        height: 10%;
+        width: 3px;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        left: -10px;
+        transition: all 300ms;
+        /* opacity: 0; */
+      }
+
+      .fancy:hover::before {
+        /* opacity: 1; */
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fancy temp" data-name="ayushi"></div>
+  </body>
+</html>
