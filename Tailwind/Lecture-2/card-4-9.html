@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style type="text/tailwindcss">
+      @layer components {
+        .social-icons {
+          @apply h-12 w-12 rounded-full p-2 bg-[#c53c86] flex justify-center items-center text-2xl;
+        }
+
+        .profile-img {
+          @apply h-24 w-24 rounded-full object-cover object-top mx-auto outline-8 outline-[#c53c86] outline absolute -top-11 left-1/2 -translate-x-1/2;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-[#b7b5b5]">
+    <div
+      class="card max-w-[300px] mx-auto mt-20 bg-slate-700 text-center text-stone-300 rounded-3xl relative"
+    >
+      <img
+        class="profile-img"
+        src="https://images.pexels.com/photos/1391498/pexels-photo-1391498.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt=""
+      />
+      <div class="content pt-14">
+        <h2 class="text-[#c53c86] font-bold mt-8">Aarti Shah</h2>
+        <h4 class="text-stone-400">aarti@gmail.com</h4>
+        <h4>Front-end Developer</h4>
+        <div class="socials mt-5 flex justify-around">
+          <div class="social-icons">
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <div class="social-icons">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="social-icons">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="social-icons">
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer rounded-b-3xl bg-[#c53c86] py-3 mt-3">
+        120k Followers | 10k Following
+      </div>
+    </div>
+  </body>
+</html>
